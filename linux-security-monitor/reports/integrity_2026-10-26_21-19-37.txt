@@ -1,0 +1,3 @@
+Fecha: 2026-10-26 21:19:37
+Archivo: /home/luis/07-Ansible/linux-security-monitor/test-files/config.txt
+Resultado: OK: archivo sin cambios
