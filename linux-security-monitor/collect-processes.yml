@@ -1,0 +1,44 @@
+---
+- name: Recopilar procesos para Linux Security Monitor
+  hosts: local
+  gather_facts: true
+
+  tasks:
+    - name: Crear directorio de informes con permisos seguros
+      ansible.builtin.file:
+        path: "{{ playbook_dir }}/reports"
+        state: directory
+        mode: '0700'
+
+    - name: Buscar informes de procesos anteriores
+      ansible.builtin.find:
+        paths: "{{ playbook_dir }}/reports"
+        patterns: "processes_*.txt"
+        file_type: file
+      register: existing_reports
+
+    - name: Proteger informes de procesos anteriores
+      ansible.builtin.file:
+        path: "{{ item.path }}"
+        mode: '0600'
+      loop: "{{ existing_reports.files }}"
+
+    - name: Generar informe de procesos
+      ansible.builtin.shell: |
+        set -o pipefail
+        timestamp=$(date '+%Y-%m-%d_%H-%M-%S')
+        filename="reports/processes_${timestamp}.txt"
+
+        ps -eo pid,ppid,user,%cpu,%mem,lstart,args --sort=-%cpu > "$filename"
+        chmod 600 "$filename"
+
+        echo "$filename"
+      args:
+        executable: /bin/bash
+        chdir: "{{ playbook_dir }}"
+      register: process_report
+      changed_when: true
+
+    - name: Mostrar ubicación del informe
+      ansible.builtin.debug:
+        msg: "Informe creado y protegido: {{ process_report.stdout }}"
