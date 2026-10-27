@@ -1,0 +1,4 @@
+---
+lsm_processes:
+  cpu_threshold: 80
+  memory_threshold: 50

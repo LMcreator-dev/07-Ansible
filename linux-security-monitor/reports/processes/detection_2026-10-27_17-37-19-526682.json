@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "module": "processes",
+  "host": "devsecopssrv01",
+  "generated_at": "2026-10-27T17:37:19.527008Z",
+  "status": "ok",
+  "summary": {
+    "process_count": 267,
+    "alert_count": 0,
+    "cpu_threshold": 80.0,
+    "memory_threshold": 50.0
+  },
+  "findings": [],
+  "metrics": {
+    "lsm_processes_status_code": 0,
+    "lsm_processes_total": 267,
+    "lsm_processes_alerts": 0,
+    "lsm_processes_cpu_threshold_percent": 80.0,
+    "lsm_processes_memory_threshold_percent": 50.0,
+    "lsm_processes_cpu_max_percent": 27.4,
+    "lsm_processes_memory_max_percent": 15.2
+  }
+}

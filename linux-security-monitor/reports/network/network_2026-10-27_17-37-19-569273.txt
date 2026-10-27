@@ -1,0 +1,53 @@
+=== Linux Security Monitor: Red ===
+Fecha: 2026-10-27 17:37:19
+
+=== Interfaces de red ===
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+ens33            UP             192.168.137.134/24 metric 100 fe80::20c:29ff:fe94:c9c/64 
+
+=== Puertos en escucha ===
+Netid State  Recv-Q Send-Q         Local Address:Port  Peer Address:PortProcess                                                 
+udp   UNCONN 0      0                 127.0.0.54:53         0.0.0.0:*    users:(("systemd-resolve",pid=3468,fd=19))             
+udp   UNCONN 0      0              127.0.0.53%lo:53         0.0.0.0:*    users:(("systemd-resolve",pid=3468,fd=17))             
+udp   UNCONN 0      0      192.168.137.134%ens33:68         0.0.0.0:*    users:(("systemd-network",pid=3567,fd=33))             
+udp   UNCONN 0      0                  127.0.0.1:323        0.0.0.0:*    users:(("chronyd",pid=1540,fd=4))                      
+udp   UNCONN 0      0                      [::1]:323           [::]:*    users:(("chronyd",pid=1540,fd=5))                      
+tcp   LISTEN 0      4096           127.0.0.53%lo:53         0.0.0.0:*    users:(("systemd-resolve",pid=3468,fd=18))             
+tcp   LISTEN 0      511                127.0.0.1:44269      0.0.0.0:*    users:(("MainThread",pid=2195,fd=29))                  
+tcp   LISTEN 0      511                127.0.0.1:36637      0.0.0.0:*    users:(("MainThread",pid=22546,fd=40))                 
+tcp   LISTEN 0      4096                 0.0.0.0:22         0.0.0.0:*    users:(("sshd",pid=3476,fd=3),("systemd",pid=1,fd=191))
+tcp   LISTEN 0      128                127.0.0.1:45965      0.0.0.0:*    users:(("code-e646868227",pid=7635,fd=9))              
+tcp   LISTEN 0      4096              127.0.0.54:53         0.0.0.0:*    users:(("systemd-resolve",pid=3468,fd=20))             
+tcp   LISTEN 0      128                127.0.0.1:34625      0.0.0.0:*    users:(("code-6d62b1d5da",pid=2038,fd=11))             
+tcp   LISTEN 0      4096                    [::]:22            [::]:*    users:(("sshd",pid=3476,fd=4),("systemd",pid=1,fd=192))
+
+=== Conexiones TCP/UDP ===
+Netid State     Recv-Q Send-Q         Local Address:Port    Peer Address:Port Process                                                                 
+udp   UNCONN    0      0                 127.0.0.54:53           0.0.0.0:*     users:(("systemd-resolve",pid=3468,fd=19))                             
+udp   UNCONN    0      0              127.0.0.53%lo:53           0.0.0.0:*     users:(("systemd-resolve",pid=3468,fd=17))                             
+udp   UNCONN    0      0      192.168.137.134%ens33:68           0.0.0.0:*     users:(("systemd-network",pid=3567,fd=33))                             
+udp   UNCONN    0      0                  127.0.0.1:323          0.0.0.0:*     users:(("chronyd",pid=1540,fd=4))                                      
+udp   UNCONN    0      0                      [::1]:323             [::]:*     users:(("chronyd",pid=1540,fd=5))                                      
+tcp   LISTEN    0      4096           127.0.0.53%lo:53           0.0.0.0:*     users:(("systemd-resolve",pid=3468,fd=18))                             
+tcp   LISTEN    0      511                127.0.0.1:44269        0.0.0.0:*     users:(("MainThread",pid=2195,fd=29))                                  
+tcp   LISTEN    0      511                127.0.0.1:36637        0.0.0.0:*     users:(("MainThread",pid=22546,fd=40))                                 
+tcp   LISTEN    0      4096                 0.0.0.0:22           0.0.0.0:*     users:(("sshd",pid=3476,fd=3),("systemd",pid=1,fd=191))                
+tcp   LISTEN    0      128                127.0.0.1:45965        0.0.0.0:*     users:(("code-e646868227",pid=7635,fd=9))                              
+tcp   LISTEN    0      4096              127.0.0.54:53           0.0.0.0:*     users:(("systemd-resolve",pid=3468,fd=20))                             
+tcp   LISTEN    0      128                127.0.0.1:34625        0.0.0.0:*     users:(("code-6d62b1d5da",pid=2038,fd=11))                             
+tcp   ESTAB     0      0            192.168.137.134:45126  20.184.175.19:443   users:(("MainThread",pid=7658,fd=70))                                  
+tcp   ESTAB     0      0                  127.0.0.1:45965      127.0.0.1:54376 users:(("code-e646868227",pid=7635,fd=12))                             
+tcp   ESTAB     0      0                  127.0.0.1:49166      127.0.0.1:1455  users:(("MainThread",pid=5030,fd=32))                                  
+tcp   ESTAB     0      0                  127.0.0.1:49180      127.0.0.1:1455  users:(("MainThread",pid=5030,fd=36))                                  
+tcp   ESTAB     0      0            192.168.137.134:22     192.168.137.1:57917 users:(("sshd-session",pid=7616,fd=9),("sshd-session",pid=7512,fd=9))  
+tcp   ESTAB     0      0            192.168.137.134:52578 172.64.155.209:443   users:(("codex",pid=13578,fd=11))                                      
+tcp   ESTAB     0      0                  127.0.0.1:1455       127.0.0.1:49180 users:(("codex",pid=13578,fd=50),("codex",pid=13578,fd=49))            
+tcp   ESTAB     0      0                  127.0.0.1:37478      127.0.0.1:34625 users:(("MainThread",pid=5030,fd=34))                                  
+tcp   ESTAB     0      0            192.168.137.134:22     192.168.137.1:49552 users:(("sshd-session",pid=13098,fd=9),("sshd-session",pid=13071,fd=9))
+tcp   ESTAB     0      0                  127.0.0.1:34625      127.0.0.1:37478 users:(("code-6d62b1d5da",pid=2038,fd=10))                             
+tcp   TIME-WAIT 0      0            192.168.137.134:49220   104.18.32.47:443                                                                          
+tcp   ESTAB     0      0                  127.0.0.1:1455       127.0.0.1:49166 users:(("codex",pid=13578,fd=48),("codex",pid=13578,fd=47))            
+tcp   ESTAB     0      0                  127.0.0.1:54376      127.0.0.1:45965 users:(("sshd-session",pid=7616,fd=13))                                
+tcp   LISTEN    0      4096                    [::]:22              [::]:*     users:(("sshd",pid=3476,fd=4),("systemd",pid=1,fd=192))                
+
+=== Fin del informe ===

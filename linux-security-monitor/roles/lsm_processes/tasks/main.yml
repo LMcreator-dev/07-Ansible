@@ -1,0 +1,7 @@
+---
+- name: Validate process thresholds for local configuration
+  ansible.builtin.assert:
+    that:
+      - lsm_processes.cpu_threshold is number and lsm_processes.cpu_threshold >= 0 and lsm_processes.cpu_threshold <= 100
+      - lsm_processes.memory_threshold is number and lsm_processes.memory_threshold >= 0 and lsm_processes.memory_threshold <= 100
+    fail_msg: "Los umbrales de CPU y memoria deben estar entre 0 y 100."

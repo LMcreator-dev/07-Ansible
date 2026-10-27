@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "module": "integrity",
+  "host": "devsecopssrv01",
+  "generated_at": "2026-10-27T17:37:19.605886Z",
+  "status": "ok",
+  "event": "integrity_check",
+  "baseline": "/var/lib/linux-security-monitor/baselines/devsecopssrv01.json",
+  "paths": [
+    "/etc/ssh",
+    "/etc/hosts",
+    "/usr/local/bin"
+  ],
+  "excludes": [],
+  "summary": {
+    "scanned_files": 13,
+    "modified_count": 0,
+    "deleted_count": 0,
+    "new_count": 0
+  },
+  "metrics": {
+    "lsm_integrity_status_code": 0,
+    "lsm_integrity_files_scanned": 13,
+    "lsm_integrity_baseline_files": 13,
+    "lsm_integrity_files_modified": 0,
+    "lsm_integrity_files_deleted": 0,
+    "lsm_integrity_files_new": 0,
+    "lsm_integrity_baseline_created": 0
+  },
+  "findings": []
+}

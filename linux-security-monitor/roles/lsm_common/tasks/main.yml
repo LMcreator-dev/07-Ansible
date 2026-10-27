@@ -1,0 +1,59 @@
+---
+- name: Validate global module configuration
+  ansible.builtin.assert:
+    that:
+      - lsm_modules is mapping
+      - lsm_reports_dir is string and lsm_reports_dir.startswith('/')
+      - lsm_state_dir is string and lsm_state_dir.startswith('/')
+      - (lsm_modules.keys() | list | difference(['antivirus', 'integrity', 'processes', 'network', 'motd']) | length) == 0
+      - lsm_modules.values() | select('string') | list | length == 0
+      - lsm_modules.values() | select('boolean') | list | length == lsm_modules | length
+    fail_msg: "Configuración LSM inválida: lsm_modules debe contener solo booleanos conocidos y lsm_reports_dir debe ser absoluto."
+
+- name: Ensure local report directory exists with restrictive permissions
+  ansible.builtin.file:
+    path: "{{ lsm_reports_dir }}"
+    state: directory
+    mode: '0700'
+    owner: "{{ lsm_report_owner | default(ansible_user_id) }}"
+  become: true
+  when: lsm_modules.values() | select('equalto', true) | list | length > 0
+
+- name: Ensure separate report directory for every enabled scanner
+  ansible.builtin.file:
+    path: "{{ lsm_reports_dir }}/{{ item }}"
+    state: directory
+    owner: "{{ lsm_report_owner | default(ansible_user_id) }}"
+    mode: '0700'
+  loop: [integrity, processes, network, antivirus]
+  when: lsm_modules.get(item, false) | bool
+  become: true
+
+- name: Find existing private reports
+  ansible.builtin.find:
+    paths: "{{ lsm_reports_dir }}"
+    patterns: ['*.txt', '*.json']
+    file_type: file
+    recurse: true
+  register: lsm_existing_reports
+  become: true
+  when: lsm_modules.values() | select('equalto', true) | list | length > 0
+
+- name: Restore local operator ownership and private mode on existing reports
+  ansible.builtin.file:
+    path: "{{ item.path }}"
+    owner: "{{ lsm_report_owner | default(ansible_user_id) }}"
+    mode: '0600'
+  loop: "{{ lsm_existing_reports.files | default([]) }}"
+  become: true
+  when: lsm_modules.values() | select('equalto', true) | list | length > 0
+
+- name: Ensure protected state directory exists
+  ansible.builtin.file:
+    path: "{{ lsm_state_dir }}"
+    state: directory
+    owner: root
+    group: root
+    mode: '0700'
+  become: true
+  when: lsm_modules.values() | select('equalto', true) | list | length > 0

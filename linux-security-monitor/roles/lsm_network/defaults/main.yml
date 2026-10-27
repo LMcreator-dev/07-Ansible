@@ -1,0 +1,3 @@
+---
+lsm_network:
+  include_processes: true

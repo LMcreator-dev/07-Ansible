@@ -1,0 +1,5 @@
+---
+lsm_integrity:
+  paths: []
+  excludes: []
+  baseline_file: "{{ lsm_state_dir }}/baselines/files.sha256.json"

@@ -1,0 +1,33 @@
+---
+- name: Validate antivirus configuration for local installation
+  ansible.builtin.assert:
+    that:
+      - lsm_antivirus is mapping
+      - lsm_antivirus.paths is sequence and lsm_antivirus.paths is not string and lsm_antivirus.paths | length > 0
+      - lsm_antivirus.paths | select('string') | list | length == lsm_antivirus.paths | length
+      - lsm_antivirus.paths | select('match', '^/') | list | length == lsm_antivirus.paths | length
+      - lsm_antivirus.excludes is sequence and lsm_antivirus.excludes is not string
+      - lsm_antivirus.action == 'report'
+      - lsm_antivirus.extra_args is sequence and lsm_antivirus.extra_args is not string
+      - lsm_antivirus.extra_args | difference(['--recursive', '--follow-dir-symlinks', '--follow-file-symlinks']) | length == 0
+    fail_msg: "lsm_antivirus inválido: paths absolutos, excludes en lista y action: report."
+- name: Require supported package family
+  ansible.builtin.assert:
+    that: ansible_os_family in lsm_clamav_packages
+    fail_msg: "ClamAV no tiene paquetes configurados para ansible_os_family={{ ansible_os_family }}."
+- name: Install ClamAV engine for local use
+  ansible.builtin.package:
+    name: "{{ lsm_clamav_packages[ansible_os_family] }}"
+    state: present
+  become: true
+- name: Inspect configured antivirus paths
+  ansible.builtin.stat:
+    path: "{{ item }}"
+  loop: "{{ lsm_antivirus.paths }}"
+  register: lsm_antivirus_stats
+  become: true
+- name: Fail clearly on missing antivirus paths
+  ansible.builtin.assert:
+    that: item.stat.exists
+    fail_msg: "Ruta de antivirus inexistente: {{ item.item }}"
+  loop: "{{ lsm_antivirus_stats.results }}"

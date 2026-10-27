@@ -1,0 +1,9 @@
+{
+  "modules": {{ lsm_modules | to_json }},
+  "reports_dir": {{ lsm_reports_dir | to_json }},
+  "state_dir": {{ lsm_state_dir | to_json }},
+  "antivirus": {{ lsm_antivirus | to_json }},
+  "integrity": {{ lsm_integrity | to_json }},
+  "processes": {{ lsm_processes | to_json }},
+  "network": {{ lsm_network | to_json }}
+}

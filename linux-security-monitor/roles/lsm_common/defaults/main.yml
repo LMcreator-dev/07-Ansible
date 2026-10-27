@@ -1,0 +1,27 @@
+---
+lsm_modules:
+  antivirus: false
+  integrity: true
+  processes: true
+  network: true
+  motd: true
+lsm_reports_dir: "{{ playbook_dir }}/reports"
+lsm_state_dir: /var/lib/linux-security-monitor
+lsm_antivirus:
+  paths: []
+  excludes: []
+  update_signatures: true
+  action: report
+  extra_args: []
+lsm_integrity:
+  paths: []
+  excludes: []
+  baseline_file: "{{ lsm_state_dir }}/baselines/files.sha256.json"
+lsm_processes:
+  cpu_threshold: 80
+  memory_threshold: 50
+lsm_network:
+  include_processes: true
+lsm_clamav_packages:
+  Debian: [clamav, clamav-freshclam]
+  RedHat: [clamav, clamav-update]

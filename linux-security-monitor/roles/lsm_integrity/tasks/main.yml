@@ -1,0 +1,22 @@
+---
+- name: Validate integrity configuration for local installation
+  ansible.builtin.assert:
+    that:
+      - lsm_integrity is mapping
+      - lsm_integrity.paths is sequence and lsm_integrity.paths is not string and lsm_integrity.paths | length > 0
+      - lsm_integrity.paths | select('string') | list | length == lsm_integrity.paths | length
+      - lsm_integrity.paths | select('match', '^/') | list | length == lsm_integrity.paths | length
+      - lsm_integrity.excludes is sequence and lsm_integrity.excludes is not string
+      - lsm_integrity.baseline_file is string and lsm_integrity.baseline_file.startswith('/')
+    fail_msg: "lsm_integrity inválido: paths debe ser una lista no vacía de rutas absolutas; excludes una lista y baseline_file absoluto."
+- name: Inspect configured integrity paths
+  ansible.builtin.stat:
+    path: "{{ item }}"
+  loop: "{{ lsm_integrity.paths }}"
+  register: lsm_integrity_stats
+  become: true
+- name: Fail clearly on missing integrity paths
+  ansible.builtin.assert:
+    that: item.stat.exists
+    fail_msg: "Ruta de integridad inexistente: {{ item.item }}"
+  loop: "{{ lsm_integrity_stats.results }}"

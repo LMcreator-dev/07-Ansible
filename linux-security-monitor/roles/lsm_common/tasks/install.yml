@@ -1,0 +1,63 @@
+---
+- name: Ensure local configuration directory exists
+  ansible.builtin.file:
+    path: /etc/linux-security-monitor
+    state: directory
+    owner: root
+    group: root
+    mode: '0700'
+  become: true
+
+- name: Install per-host local configuration
+  ansible.builtin.template:
+    src: config.json.j2
+    dest: /etc/linux-security-monitor/config.json
+    owner: root
+    group: root
+    mode: '0600'
+  become: true
+
+- name: Install local module runner
+  ansible.builtin.copy:
+    src: linux-security-monitor.py
+    dest: /usr/local/sbin/linux-security-monitor
+    owner: root
+    group: root
+    mode: '0750'
+  become: true
+
+- name: Ensure local module library exists
+  ansible.builtin.file:
+    path: /usr/local/lib/linux-security-monitor
+    state: directory
+    owner: root
+    group: root
+    mode: '0750'
+  become: true
+
+- name: Install local integrity checker
+  ansible.builtin.copy:
+    src: "{{ role_path }}/../lsm_integrity/files/integrity.py"
+    dest: /usr/local/lib/linux-security-monitor/integrity.py
+    owner: root
+    group: root
+    mode: '0750'
+  become: true
+
+- name: Install local process detector
+  ansible.builtin.copy:
+    src: "{{ role_path }}/../lsm_processes/files/detect-suspicious-processes.sh"
+    dest: /usr/local/lib/linux-security-monitor/detect-suspicious-processes.sh
+    owner: root
+    group: root
+    mode: '0750'
+  become: true
+
+- name: Install local network collector
+  ansible.builtin.copy:
+    src: "{{ role_path }}/../lsm_network/files/collect-network-connections.sh"
+    dest: /usr/local/lib/linux-security-monitor/collect-network-connections.sh
+    owner: root
+    group: root
+    mode: '0750'
+  become: true

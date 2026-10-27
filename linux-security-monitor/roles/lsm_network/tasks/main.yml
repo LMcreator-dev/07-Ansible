@@ -1,0 +1,5 @@
+---
+- name: Validate network module configuration
+  ansible.builtin.assert:
+    that: lsm_network.include_processes is boolean
+    fail_msg: "lsm_network.include_processes debe ser booleano."

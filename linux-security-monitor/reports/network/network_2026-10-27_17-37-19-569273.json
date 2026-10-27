@@ -1,0 +1,464 @@
+{
+  "schema_version": 1,
+  "module": "network",
+  "host": "devsecopssrv01",
+  "generated_at": "2026-10-27T17:37:19.569492Z",
+  "status": "ok",
+  "summary": {
+    "interface_count": 2,
+    "listening_socket_count": 13,
+    "connection_count": 26,
+    "include_processes": true
+  },
+  "findings": [],
+  "metrics": {
+    "lsm_network_status_code": 0,
+    "lsm_network_interfaces_total": 2,
+    "lsm_network_interfaces_up": 2,
+    "lsm_network_listening_sockets_total": 13,
+    "lsm_network_sockets_total": 26,
+    "lsm_network_tcp_established_total": 12,
+    "lsm_network_udp_sockets_total": 5,
+    "lsm_network_collection_errors": 0,
+    "lsm_network_process_details_enabled": 1
+  },
+  "interfaces": [
+    {
+      "ifindex": 1,
+      "ifname": "lo",
+      "flags": [
+        "LOOPBACK",
+        "UP",
+        "LOWER_UP"
+      ],
+      "mtu": 65536,
+      "qdisc": "noqueue",
+      "operstate": "UNKNOWN",
+      "group": "default",
+      "txqlen": 1000,
+      "link_type": "loopback",
+      "address": "00:00:00:00:00:00",
+      "broadcast": "00:00:00:00:00:00",
+      "addr_info": [
+        {
+          "family": "inet",
+          "local": "127.0.0.1",
+          "prefixlen": 8,
+          "scope": "host",
+          "label": "lo",
+          "valid_life_time": 4294967295,
+          "preferred_life_time": 4294967295
+        },
+        {
+          "family": "inet6",
+          "local": "::1",
+          "prefixlen": 128,
+          "scope": "host",
+          "noprefixroute": true,
+          "valid_life_time": 4294967295,
+          "preferred_life_time": 4294967295
+        }
+      ]
+    },
+    {
+      "ifindex": 2,
+      "ifname": "ens33",
+      "flags": [
+        "BROADCAST",
+        "MULTICAST",
+        "UP",
+        "LOWER_UP"
+      ],
+      "mtu": 1500,
+      "qdisc": "pfifo_fast",
+      "operstate": "UP",
+      "group": "default",
+      "txqlen": 1000,
+      "link_type": "ether",
+      "address": "00:0c:29:94:0c:9c",
+      "broadcast": "ff:ff:ff:ff:ff:ff",
+      "altnames": [
+        "enp2s1",
+        "enx000c29940c9c"
+      ],
+      "addr_info": [
+        {
+          "family": "inet",
+          "local": "192.168.137.134",
+          "prefixlen": 24,
+          "metric": 100,
+          "broadcast": "192.168.137.255",
+          "scope": "global",
+          "dynamic": true,
+          "label": "ens33",
+          "valid_life_time": 1777,
+          "preferred_life_time": 1777
+        },
+        {
+          "family": "inet6",
+          "local": "fe80::20c:29ff:fe94:c9c",
+          "prefixlen": 64,
+          "scope": "link",
+          "protocol": "kernel_ll",
+          "valid_life_time": 4294967295,
+          "preferred_life_time": 4294967295
+        }
+      ]
+    }
+  ],
+  "listening_sockets": [
+    {
+      "protocol": "udp",
+      "state": "UNCONN",
+      "receive_queue": "0",
+      "send_queue": "0",
+      "local_address": "127.0.0.54:53",
+      "peer_address": "0.0.0.0:*",
+      "process": "users:((\"systemd-resolve\",pid=3468,fd=19))             "
+    },
+    {
+      "protocol": "udp",
+      "state": "UNCONN",
+      "receive_queue": "0",
+      "send_queue": "0",
+      "local_address": "127.0.0.53%lo:53",
+      "peer_address": "0.0.0.0:*",
+      "process": "users:((\"systemd-resolve\",pid=3468,fd=17))             "
+    },
+    {
+      "protocol": "udp",
+      "state": "UNCONN",
+      "receive_queue": "0",
+      "send_queue": "0",
+      "local_address": "192.168.137.134%ens33:68",
+      "peer_address": "0.0.0.0:*",
+      "process": "users:((\"systemd-network\",pid=3567,fd=33))             "
+    },
+    {
+      "protocol": "udp",
+      "state": "UNCONN",
+      "receive_queue": "0",
+      "send_queue": "0",
+      "local_address": "127.0.0.1:323",
+      "peer_address": "0.0.0.0:*",
+      "process": "users:((\"chronyd\",pid=1540,fd=4))                      "
+    },
+    {
+      "protocol": "udp",
+      "state": "UNCONN",
+      "receive_queue": "0",
+      "send_queue": "0",
+      "local_address": "[::1]:323",
+      "peer_address": "[::]:*",
+      "process": "users:((\"chronyd\",pid=1540,fd=5))                      "
+    },
+    {
+      "protocol": "tcp",
+      "state": "LISTEN",
+      "receive_queue": "0",
+      "send_queue": "4096",
+      "local_address": "127.0.0.53%lo:53",
+      "peer_address": "0.0.0.0:*",
+      "process": "users:((\"systemd-resolve\",pid=3468,fd=18))             "
+    },
+    {
+      "protocol": "tcp",
+      "state": "LISTEN",
+      "receive_queue": "0",
+      "send_queue": "511",
+      "local_address": "127.0.0.1:44269",
+      "peer_address": "0.0.0.0:*",
+      "process": "users:((\"MainThread\",pid=2195,fd=29))                  "
+    },
+    {
+      "protocol": "tcp",
+      "state": "LISTEN",
+      "receive_queue": "0",
+      "send_queue": "511",
+      "local_address": "127.0.0.1:36637",
+      "peer_address": "0.0.0.0:*",
+      "process": "users:((\"MainThread\",pid=22546,fd=40))                 "
+    },
+    {
+      "protocol": "tcp",
+      "state": "LISTEN",
+      "receive_queue": "0",
+      "send_queue": "4096",
+      "local_address": "0.0.0.0:22",
+      "peer_address": "0.0.0.0:*",
+      "process": "users:((\"sshd\",pid=3476,fd=3),(\"systemd\",pid=1,fd=191))"
+    },
+    {
+      "protocol": "tcp",
+      "state": "LISTEN",
+      "receive_queue": "0",
+      "send_queue": "128",
+      "local_address": "127.0.0.1:45965",
+      "peer_address": "0.0.0.0:*",
+      "process": "users:((\"code-e646868227\",pid=7635,fd=9))              "
+    },
+    {
+      "protocol": "tcp",
+      "state": "LISTEN",
+      "receive_queue": "0",
+      "send_queue": "4096",
+      "local_address": "127.0.0.54:53",
+      "peer_address": "0.0.0.0:*",
+      "process": "users:((\"systemd-resolve\",pid=3468,fd=20))             "
+    },
+    {
+      "protocol": "tcp",
+      "state": "LISTEN",
+      "receive_queue": "0",
+      "send_queue": "128",
+      "local_address": "127.0.0.1:34625",
+      "peer_address": "0.0.0.0:*",
+      "process": "users:((\"code-6d62b1d5da\",pid=2038,fd=11))             "
+    },
+    {
+      "protocol": "tcp",
+      "state": "LISTEN",
+      "receive_queue": "0",
+      "send_queue": "4096",
+      "local_address": "[::]:22",
+      "peer_address": "[::]:*",
+      "process": "users:((\"sshd\",pid=3476,fd=4),(\"systemd\",pid=1,fd=192))"
+    }
+  ],
+  "connections": [
+    {
+      "protocol": "udp",
+      "state": "UNCONN",
+      "receive_queue": "0",
+      "send_queue": "0",
+      "local_address": "127.0.0.54:53",
+      "peer_address": "0.0.0.0:*",
+      "process": "users:((\"systemd-resolve\",pid=3468,fd=19))                             "
+    },
+    {
+      "protocol": "udp",
+      "state": "UNCONN",
+      "receive_queue": "0",
+      "send_queue": "0",
+      "local_address": "127.0.0.53%lo:53",
+      "peer_address": "0.0.0.0:*",
+      "process": "users:((\"systemd-resolve\",pid=3468,fd=17))                             "
+    },
+    {
+      "protocol": "udp",
+      "state": "UNCONN",
+      "receive_queue": "0",
+      "send_queue": "0",
+      "local_address": "192.168.137.134%ens33:68",
+      "peer_address": "0.0.0.0:*",
+      "process": "users:((\"systemd-network\",pid=3567,fd=33))                             "
+    },
+    {
+      "protocol": "udp",
+      "state": "UNCONN",
+      "receive_queue": "0",
+      "send_queue": "0",
+      "local_address": "127.0.0.1:323",
+      "peer_address": "0.0.0.0:*",
+      "process": "users:((\"chronyd\",pid=1540,fd=4))                                      "
+    },
+    {
+      "protocol": "udp",
+      "state": "UNCONN",
+      "receive_queue": "0",
+      "send_queue": "0",
+      "local_address": "[::1]:323",
+      "peer_address": "[::]:*",
+      "process": "users:((\"chronyd\",pid=1540,fd=5))                                      "
+    },
+    {
+      "protocol": "tcp",
+      "state": "LISTEN",
+      "receive_queue": "0",
+      "send_queue": "4096",
+      "local_address": "127.0.0.53%lo:53",
+      "peer_address": "0.0.0.0:*",
+      "process": "users:((\"systemd-resolve\",pid=3468,fd=18))                             "
+    },
+    {
+      "protocol": "tcp",
+      "state": "LISTEN",
+      "receive_queue": "0",
+      "send_queue": "511",
+      "local_address": "127.0.0.1:44269",
+      "peer_address": "0.0.0.0:*",
+      "process": "users:((\"MainThread\",pid=2195,fd=29))                                  "
+    },
+    {
+      "protocol": "tcp",
+      "state": "LISTEN",
+      "receive_queue": "0",
+      "send_queue": "511",
+      "local_address": "127.0.0.1:36637",
+      "peer_address": "0.0.0.0:*",
+      "process": "users:((\"MainThread\",pid=22546,fd=40))                                 "
+    },
+    {
+      "protocol": "tcp",
+      "state": "LISTEN",
+      "receive_queue": "0",
+      "send_queue": "4096",
+      "local_address": "0.0.0.0:22",
+      "peer_address": "0.0.0.0:*",
+      "process": "users:((\"sshd\",pid=3476,fd=3),(\"systemd\",pid=1,fd=191))                "
+    },
+    {
+      "protocol": "tcp",
+      "state": "LISTEN",
+      "receive_queue": "0",
+      "send_queue": "128",
+      "local_address": "127.0.0.1:45965",
+      "peer_address": "0.0.0.0:*",
+      "process": "users:((\"code-e646868227\",pid=7635,fd=9))                              "
+    },
+    {
+      "protocol": "tcp",
+      "state": "LISTEN",
+      "receive_queue": "0",
+      "send_queue": "4096",
+      "local_address": "127.0.0.54:53",
+      "peer_address": "0.0.0.0:*",
+      "process": "users:((\"systemd-resolve\",pid=3468,fd=20))                             "
+    },
+    {
+      "protocol": "tcp",
+      "state": "LISTEN",
+      "receive_queue": "0",
+      "send_queue": "128",
+      "local_address": "127.0.0.1:34625",
+      "peer_address": "0.0.0.0:*",
+      "process": "users:((\"code-6d62b1d5da\",pid=2038,fd=11))                             "
+    },
+    {
+      "protocol": "tcp",
+      "state": "ESTAB",
+      "receive_queue": "0",
+      "send_queue": "0",
+      "local_address": "192.168.137.134:45126",
+      "peer_address": "20.184.175.19:443",
+      "process": "users:((\"MainThread\",pid=7658,fd=70))                                  "
+    },
+    {
+      "protocol": "tcp",
+      "state": "ESTAB",
+      "receive_queue": "0",
+      "send_queue": "0",
+      "local_address": "127.0.0.1:45965",
+      "peer_address": "127.0.0.1:54376",
+      "process": "users:((\"code-e646868227\",pid=7635,fd=12))                             "
+    },
+    {
+      "protocol": "tcp",
+      "state": "ESTAB",
+      "receive_queue": "0",
+      "send_queue": "0",
+      "local_address": "127.0.0.1:49166",
+      "peer_address": "127.0.0.1:1455",
+      "process": "users:((\"MainThread\",pid=5030,fd=32))                                  "
+    },
+    {
+      "protocol": "tcp",
+      "state": "ESTAB",
+      "receive_queue": "0",
+      "send_queue": "0",
+      "local_address": "127.0.0.1:49180",
+      "peer_address": "127.0.0.1:1455",
+      "process": "users:((\"MainThread\",pid=5030,fd=36))                                  "
+    },
+    {
+      "protocol": "tcp",
+      "state": "ESTAB",
+      "receive_queue": "0",
+      "send_queue": "0",
+      "local_address": "192.168.137.134:22",
+      "peer_address": "192.168.137.1:57917",
+      "process": "users:((\"sshd-session\",pid=7616,fd=9),(\"sshd-session\",pid=7512,fd=9))  "
+    },
+    {
+      "protocol": "tcp",
+      "state": "ESTAB",
+      "receive_queue": "0",
+      "send_queue": "0",
+      "local_address": "192.168.137.134:52578",
+      "peer_address": "172.64.155.209:443",
+      "process": "users:((\"codex\",pid=13578,fd=11))                                      "
+    },
+    {
+      "protocol": "tcp",
+      "state": "ESTAB",
+      "receive_queue": "0",
+      "send_queue": "0",
+      "local_address": "127.0.0.1:1455",
+      "peer_address": "127.0.0.1:49180",
+      "process": "users:((\"codex\",pid=13578,fd=50),(\"codex\",pid=13578,fd=49))            "
+    },
+    {
+      "protocol": "tcp",
+      "state": "ESTAB",
+      "receive_queue": "0",
+      "send_queue": "0",
+      "local_address": "127.0.0.1:37478",
+      "peer_address": "127.0.0.1:34625",
+      "process": "users:((\"MainThread\",pid=5030,fd=34))                                  "
+    },
+    {
+      "protocol": "tcp",
+      "state": "ESTAB",
+      "receive_queue": "0",
+      "send_queue": "0",
+      "local_address": "192.168.137.134:22",
+      "peer_address": "192.168.137.1:49552",
+      "process": "users:((\"sshd-session\",pid=13098,fd=9),(\"sshd-session\",pid=13071,fd=9))"
+    },
+    {
+      "protocol": "tcp",
+      "state": "ESTAB",
+      "receive_queue": "0",
+      "send_queue": "0",
+      "local_address": "127.0.0.1:34625",
+      "peer_address": "127.0.0.1:37478",
+      "process": "users:((\"code-6d62b1d5da\",pid=2038,fd=10))                             "
+    },
+    {
+      "protocol": "tcp",
+      "state": "TIME-WAIT",
+      "receive_queue": "0",
+      "send_queue": "0",
+      "local_address": "192.168.137.134:49220",
+      "peer_address": "104.18.32.47:443"
+    },
+    {
+      "protocol": "tcp",
+      "state": "ESTAB",
+      "receive_queue": "0",
+      "send_queue": "0",
+      "local_address": "127.0.0.1:1455",
+      "peer_address": "127.0.0.1:49166",
+      "process": "users:((\"codex\",pid=13578,fd=48),(\"codex\",pid=13578,fd=47))            "
+    },
+    {
+      "protocol": "tcp",
+      "state": "ESTAB",
+      "receive_queue": "0",
+      "send_queue": "0",
+      "local_address": "127.0.0.1:54376",
+      "peer_address": "127.0.0.1:45965",
+      "process": "users:((\"sshd-session\",pid=7616,fd=13))                                "
+    },
+    {
+      "protocol": "tcp",
+      "state": "LISTEN",
+      "receive_queue": "0",
+      "send_queue": "4096",
+      "local_address": "[::]:22",
+      "peer_address": "[::]:*",
+      "process": "users:((\"sshd\",pid=3476,fd=4),(\"systemd\",pid=1,fd=192))                "
+    }
+  ],
+  "errors": []
+}

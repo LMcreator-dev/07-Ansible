@@ -1,0 +1,268 @@
+    PID    PPID USER     %CPU %MEM                  STARTED COMMAND
+  32023   32022 root     28.0  0.5 Tue Oct 27 17:37:18 2026 /usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1793122638.9108174-32004-234810317666367/AnsiballZ_command.py
+  32004   31196 root     15.8  1.3 Tue Oct 27 17:37:18 2026 /usr/bin/python3 /usr/bin/ansible-playbook -K site.yml
+  32024   32023 root     11.1  0.3 Tue Oct 27 17:37:18 2026 python3 /usr/local/sbin/linux-security-monitor all
+  31196   31195 root      5.6  1.3 Tue Oct 27 17:37:05 2026 /usr/bin/python3 /usr/bin/ansible-playbook -K site.yml
+   7658    5030 luis      1.1 15.2 Tue Oct 27 15:39:48 2026 /home/luis/.vscode-server/cli/servers/Stable-e646868227c3e3a9e3f24277c8c7220be42c0be7/server/node --dns-result-order=ipv4first /home/luis/.vscode-server/cli/servers/Stable-e646868227c3e3a9e3f24277c8c7220be42c0be7/server/out/bootstrap-fork --type=extensionHost --transformURIs --useHostProxy=false
+   5030    5026 luis      0.9  3.2 Tue Oct 27 15:28:28 2026 /home/luis/.vscode-server/cli/servers/Stable-e646868227c3e3a9e3f24277c8c7220be42c0be7/server/node /home/luis/.vscode-server/cli/servers/Stable-e646868227c3e3a9e3f24277c8c7220be42c0be7/server/out/server-main.js --connection-token=remotessh --accept-server-license-terms --agent-host-bridge-port=34625 --agent-host-bridge-host=127.0.0.1 --start-server --enable-remote-auto-shutdown --socket-path=/tmp/code-3a18b938-ed43-4d10-b11b-12b7e6309844
+  22546    7658 luis      0.6 10.8 Tue Oct 27 17:21:52 2026 /home/luis/.vscode-server/cli/servers/Stable-e646868227c3e3a9e3f24277c8c7220be42c0be7/server/node /home/luis/.vscode-server/extensions/ms-python.vscode-pylance-2026.4.1/dist/server.bundle.js --cancellationReceive=file:d122d4d53d0386f57fa471423b94ca6a8f3eb73c62 --node-ipc --clientProcessId=7658
+  13578    7658 luis      0.5  3.8 Tue Oct 27 16:33:06 2026 /home/luis/.vscode-server/extensions/openai.chatgpt-26.1021.22027-linux-x64/bin/linux-x86_64/codex -c features.code_mode_host=true -c features.windows_sandbox_service=true app-server --analytics-default-enabled
+   7635    7617 luis      0.2  0.4 Tue Oct 27 15:39:48 2026 /home/luis/.vscode-server/code-e646868227c3e3a9e3f24277c8c7220be42c0be7 command-shell --cli-data-dir /home/luis/.vscode-server/cli --parent-process-id 7617 --on-host=127.0.0.1 --on-port
+  22399    7658 luis      0.2  0.0 Tue Oct 27 17:21:51 2026 /home/luis/.vscode-server/extensions/ms-python.vscode-python-envs-1.40.0-linux-x64/python-env-tools/bin/pet server
+   7616    7512 luis      0.1  0.1 Tue Oct 27 15:39:48 2026 sshd-session: luis@notty
+   7670    5030 luis      0.1  2.2 Tue Oct 27 15:39:49 2026 /home/luis/.vscode-server/cli/servers/Stable-e646868227c3e3a9e3f24277c8c7220be42c0be7/server/node /home/luis/.vscode-server/cli/servers/Stable-e646868227c3e3a9e3f24277c8c7220be42c0be7/server/out/bootstrap-fork --type=fileWatcher
+   5092    5030 luis      0.1  1.6 Tue Oct 27 15:28:29 2026 /home/luis/.vscode-server/cli/servers/Stable-e646868227c3e3a9e3f24277c8c7220be42c0be7/server/node /home/luis/.vscode-server/cli/servers/Stable-e646868227c3e3a9e3f24277c8c7220be42c0be7/server/out/bootstrap-fork --type=ptyHost --logsPath /home/luis/.vscode-server/data/logs/20261027T152829
+   3474       1 root      0.0  0.2 Tue Oct 27 14:51:53 2026 /usr/bin/vmtoolsd
+  27186       2 root      0.0  0.0 Tue Oct 27 17:33:54 2026 [kworker/3:2-events]
+   2195    2097 luis      0.0  3.0 Tue Oct 27 14:36:10 2026 /home/luis/.vscode-server/cli/servers/Stable-e646868227c3e3a9e3f24277c8c7220be42c0be7/server/node /home/luis/.vscode-server/cli/servers/Stable-e646868227c3e3a9e3f24277c8c7220be42c0be7/server/out/bootstrap-fork --type=agentHost --logsPath /home/luis/.vscode-server/data/logs/20261027T143611 --user-data-dir /home/luis/.vscode-server/data --telemetry-level all
+  13128       2 root      0.0  0.0 Tue Oct 27 16:20:18 2026 [kworker/2:0-events]
+   7226       2 root      0.0  0.0 Tue Oct 27 15:38:19 2026 [kworker/0:1-mm_percpu_wq]
+  15421       2 root      0.0  0.0 Tue Oct 27 17:00:08 2026 [kworker/1:1-mm_percpu_wq]
+  13788   13578 luis      0.0  0.4 Tue Oct 27 16:34:52 2026 /home/luis/.vscode-server/extensions/openai.chatgpt-26.1021.22027-linux-x64/bin/linux-x86_64/codex-code-mode-host
+      1       0 root      0.0  0.2 Tue Oct 27 14:34:43 2026 /usr/lib/systemd/systemd --system --deserialize=166
+   2097    2092 luis      0.0  1.8 Tue Oct 27 14:36:09 2026 /home/luis/.vscode-server/cli/servers/Stable-e646868227c3e3a9e3f24277c8c7220be42c0be7/server/node /home/luis/.vscode-server/cli/servers/Stable-e646868227c3e3a9e3f24277c8c7220be42c0be7/server/out/server-main.js --socket-path /tmp/code-97c7d240-11a0-49e5-9778-e7942c240d9a --agent-host-path /tmp/code-9667d075-4d80-440c-ad58-255a909bdd5d --start-server --accept-server-license-terms --enable-remote-auto-shutdown --without-connection-token
+   2231    2195 luis      0.0  1.9 Tue Oct 27 14:36:12 2026 /home/luis/.vscode-server/cli/servers/Stable-e646868227c3e3a9e3f24277c8c7220be42c0be7/server/node_modules/@github/copilot-sdk-linux-x64/prebuilds/linux-x64/copilot-runtime --headless --no-auto-update --log-level info --stdio --no-auto-login
+  25696       2 root      0.0  0.0 Tue Oct 27 17:27:24 2026 [kworker/3:0-events]
+   7712    5092 luis      0.0  0.1 Tue Oct 27 15:39:50 2026 /bin/bash --init-file /home/luis/.vscode-server/cli/servers/Stable-e646868227c3e3a9e3f24277c8c7220be42c0be7/server/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh
+  14734       2 root      0.0  0.0 Tue Oct 27 16:50:01 2026 [kworker/u514:2-flush-252:0]
+  13986    7658 luis      0.0  1.5 Tue Oct 27 16:37:37 2026 /home/luis/.vscode-server/cli/servers/Stable-e646868227c3e3a9e3f24277c8c7220be42c0be7/server/node /home/luis/.vscode-server/cli/servers/Stable-e646868227c3e3a9e3f24277c8c7220be42c0be7/server/extensions/markdown-language-features/dist/serverWorkerMain --node-ipc --clientProcessId=7658
+   7956    7658 luis      0.0  1.5 Tue Oct 27 15:40:25 2026 /home/luis/.vscode-server/cli/servers/Stable-e646868227c3e3a9e3f24277c8c7220be42c0be7/server/node /home/luis/.vscode-server/cli/servers/Stable-e646868227c3e3a9e3f24277c8c7220be42c0be7/server/extensions/json-language-features/server/dist/node/jsonServerMain --node-ipc --clientProcessId=7658
+   1487       1 root      0.0  0.8 Tue Oct 27 14:34:49 2026 /usr/lib/snapd/snapd
+    747       1 root      0.0  0.1 Tue Oct 27 14:34:47 2026 /usr/sbin/multipathd -d -s
+    604       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [jbd2/dm-0-8]
+     15       2 root      0.0  0.0 Tue Oct 27 14:34:43 2026 [rcu_preempt]
+     40       2 root      0.0  0.0 Tue Oct 27 14:34:43 2026 [kworker/u513:0-events_unbound]
+  29039       2 root      0.0  0.0 Tue Oct 27 17:34:14 2026 [kworker/u514:0-events_power_efficient]
+  22583       2 root      0.0  0.0 Tue Oct 27 17:21:55 2026 [kworker/1:2H-kblockd]
+   3874       2 root      0.0  0.0 Tue Oct 27 15:00:39 2026 [kworker/u514:1-events_power_efficient]
+     48       2 root      0.0  0.0 Tue Oct 27 14:34:43 2026 [kworker/u513:1-events_unbound]
+   3468       1 systemd+  0.0  0.2 Tue Oct 27 14:51:53 2026 /usr/lib/systemd/systemd-resolved
+   2038       1 luis      0.0  0.3 Tue Oct 27 14:36:07 2026 /home/luis/.vscode-server/code-6d62b1d5dace93a33b3a6d3eca1317bd5e15bcb1 --cli-data-dir /home/luis/.vscode-server/cli agent host
+  22325       2 root      0.0  0.0 Tue Oct 27 17:20:49 2026 [kworker/u514:3-flush-252:0]
+   1225       2 root      0.0  0.0 Tue Oct 27 14:34:49 2026 [kworker/u513:4-ext4-rsv-conversion]
+     53       2 root      0.0  0.0 Tue Oct 27 14:34:43 2026 [kcompactd0]
+  19817       2 root      0.0  0.0 Tue Oct 27 17:14:24 2026 [kworker/3:1-events]
+   3445       1 root      0.0  0.3 Tue Oct 27 14:51:53 2026 /usr/lib/systemd/systemd-journald
+   1474       1 message+  0.0  0.1 Tue Oct 27 14:34:49 2026 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+    720       2 root      0.0  0.0 Tue Oct 27 14:34:47 2026 [kworker/3:1H-kblockd]
+  13558       2 root      0.0  0.0 Tue Oct 27 16:32:44 2026 [kworker/2:2H-kblockd]
+   3472       1 root      0.0  0.2 Tue Oct 27 14:51:53 2026 /usr/libexec/udisks2/udisksd
+   1482       1 root      0.0  0.5 Tue Oct 27 14:34:49 2026 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+  13691       2 root      0.0  0.0 Tue Oct 27 16:33:14 2026 [kworker/0:2H-kblockd]
+   3467       1 polkitd   0.0  0.1 Tue Oct 27 14:51:53 2026 /usr/lib/polkit-1/polkitd --no-debug --log-level=notice
+   1541       1 root      0.0  0.6 Tue Oct 27 14:34:50 2026 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+    669       2 root      0.0  0.0 Tue Oct 27 14:34:47 2026 [irq/57-vmw_vmci]
+     72       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [kswapd0]
+   1843       1 luis      0.0  0.2 Tue Oct 27 14:34:58 2026 /usr/lib/systemd/systemd --user --deserialize=12
+   1540    1473 _chrony   0.0  0.1 Tue Oct 27 14:34:50 2026 /usr/sbin/chronyd -n -F 1
+  22529    5092 luis      0.0  0.1 Tue Oct 27 17:21:51 2026 /bin/bash --init-file /home/luis/.vscode-server/cli/servers/Stable-e646868227c3e3a9e3f24277c8c7220be42c0be7/server/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh
+   1490       1 root      0.0  0.1 Tue Oct 27 14:34:49 2026 /usr/lib/systemd/systemd-logind
+     33       2 root      0.0  0.0 Tue Oct 27 14:34:43 2026 [kworker/2:0H-kblockd]
+   3514       1 syslog    0.0  0.1 Tue Oct 27 14:51:53 2026 /usr/sbin/rsyslogd -n -iNONE
+     31       2 root      0.0  0.0 Tue Oct 27 14:34:43 2026 [ksoftirqd/2]
+   3567       1 systemd+  0.0  0.2 Tue Oct 27 14:51:53 2026 /usr/lib/systemd/systemd-networkd
+   3485       1 root      0.0  0.2 Tue Oct 27 14:51:53 2026 /usr/lib/systemd/systemd-udevd
+     30       2 root      0.0  0.0 Tue Oct 27 14:34:43 2026 [migration/2]
+     24       2 root      0.0  0.0 Tue Oct 27 14:34:43 2026 [migration/1]
+     18       2 root      0.0  0.0 Tue Oct 27 14:34:43 2026 [migration/0]
+  13099   13098 luis      0.0  0.1 Tue Oct 27 16:19:34 2026 -bash
+   3611       1 root      0.0  0.2 Tue Oct 27 14:51:54 2026 /usr/libexec/upowerd
+   3539       1 root      0.0  0.2 Tue Oct 27 14:51:53 2026 /usr/sbin/ModemManager
+     36       2 root      0.0  0.0 Tue Oct 27 14:34:43 2026 [migration/3]
+    671       2 root      0.0  0.0 Tue Oct 27 14:34:47 2026 [irq/59-vmw_vmci]
+      2       0 root      0.0  0.0 Tue Oct 27 14:34:43 2026 [kthreadd]
+     14       2 root      0.0  0.0 Tue Oct 27 14:34:43 2026 [ksoftirqd/0]
+   3476       1 root      0.0  0.1 Tue Oct 27 14:51:53 2026 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+   1662       1 root      0.0  0.0 Tue Oct 27 14:34:50 2026 /usr/sbin/cron -f -P
+    109       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [scsi_eh_0]
+     37       2 root      0.0  0.0 Tue Oct 27 14:34:43 2026 [ksoftirqd/3]
+   1863    1680 luis      0.0  0.1 Tue Oct 27 14:34:58 2026 -bash
+   1680       1 root      0.0  0.1 Tue Oct 27 14:34:50 2026 login -- luis
+   1473       1 root      0.0  0.0 Tue Oct 27 14:34:49 2026 /bin/sh /usr/lib/systemd/scripts/chronyd-starter.sh -n -F 1
+    751       2 root      0.0  0.0 Tue Oct 27 14:34:47 2026 [kworker/0:1H-kblockd]
+    111       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [scsi_eh_1]
+     25       2 root      0.0  0.0 Tue Oct 27 14:34:43 2026 [ksoftirqd/1]
+      3       2 root      0.0  0.0 Tue Oct 27 14:34:43 2026 [pool_workqueue_release]
+      4       2 root      0.0  0.0 Tue Oct 27 14:34:43 2026 [kworker/R-rcu_gp]
+      5       2 root      0.0  0.0 Tue Oct 27 14:34:43 2026 [kworker/R-sync_wq]
+      6       2 root      0.0  0.0 Tue Oct 27 14:34:43 2026 [kworker/R-kvfree_rcu_reclaim]
+      7       2 root      0.0  0.0 Tue Oct 27 14:34:43 2026 [kworker/R-slub_flushwq]
+      8       2 root      0.0  0.0 Tue Oct 27 14:34:43 2026 [kworker/R-netns]
+     12       2 root      0.0  0.0 Tue Oct 27 14:34:43 2026 [kworker/u512:0-ipv6_addrconf]
+     13       2 root      0.0  0.0 Tue Oct 27 14:34:43 2026 [kworker/R-mm_percpu_wq]
+     16       2 root      0.0  0.0 Tue Oct 27 14:34:43 2026 [rcu_exp_par_gp_kthread_worker/1]
+     17       2 root      0.0  0.0 Tue Oct 27 14:34:43 2026 [rcu_exp_gp_kthread_worker]
+     19       2 root      0.0  0.0 Tue Oct 27 14:34:43 2026 [kprobe-optimizer]
+     20       2 root      0.0  0.0 Tue Oct 27 14:34:43 2026 [idle_inject/0]
+     21       2 root      0.0  0.0 Tue Oct 27 14:34:43 2026 [cpuhp/0]
+     22       2 root      0.0  0.0 Tue Oct 27 14:34:43 2026 [cpuhp/1]
+     23       2 root      0.0  0.0 Tue Oct 27 14:34:43 2026 [idle_inject/1]
+     27       2 root      0.0  0.0 Tue Oct 27 14:34:43 2026 [kworker/1:0H-kblockd]
+     28       2 root      0.0  0.0 Tue Oct 27 14:34:43 2026 [cpuhp/2]
+     29       2 root      0.0  0.0 Tue Oct 27 14:34:43 2026 [idle_inject/2]
+     34       2 root      0.0  0.0 Tue Oct 27 14:34:43 2026 [cpuhp/3]
+     35       2 root      0.0  0.0 Tue Oct 27 14:34:43 2026 [idle_inject/3]
+     39       2 root      0.0  0.0 Tue Oct 27 14:34:43 2026 [kworker/3:0H-kblockd]
+     42       2 root      0.0  0.0 Tue Oct 27 14:34:43 2026 [kdevtmpfs]
+     43       2 root      0.0  0.0 Tue Oct 27 14:34:43 2026 [kworker/R-inet_frag_wq]
+     44       2 root      0.0  0.0 Tue Oct 27 14:34:43 2026 [rcu_tasks_kthread]
+     45       2 root      0.0  0.0 Tue Oct 27 14:34:43 2026 [rcu_tasks_rude_kthread]
+     46       2 root      0.0  0.0 Tue Oct 27 14:34:43 2026 [kauditd]
+     47       2 root      0.0  0.0 Tue Oct 27 14:34:43 2026 [khungtaskd]
+     49       2 root      0.0  0.0 Tue Oct 27 14:34:43 2026 [oom_reaper]
+     52       2 root      0.0  0.0 Tue Oct 27 14:34:43 2026 [kworker/R-writeback]
+     54       2 root      0.0  0.0 Tue Oct 27 14:34:43 2026 [ksmd]
+     55       2 root      0.0  0.0 Tue Oct 27 14:34:43 2026 [khugepaged]
+     56       2 root      0.0  0.0 Tue Oct 27 14:34:43 2026 [kworker/R-kblockd]
+     57       2 root      0.0  0.0 Tue Oct 27 14:34:43 2026 [kworker/R-blkcg_punt_bio]
+     58       2 root      0.0  0.0 Tue Oct 27 14:34:43 2026 [kworker/R-kintegrityd]
+     59       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [irq/9-acpi]
+     62       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [kworker/R-tpm_dev_wq]
+     63       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [kworker/R-ata_sff]
+     64       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [kworker/R-md_bitmap]
+     65       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [kworker/R-md_llbitmap_io]
+     66       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [kworker/R-md_llbitmap_unplug]
+     67       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [kworker/R-edac-poller]
+     68       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [kworker/R-devfreq_wq]
+     69       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [watchdogd]
+     71       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [kworker/R-quota_events_unbound]
+     74       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [ecryptfs-kthread]
+     75       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [kworker/R-kthrotld]
+     76       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [irq/24-pciehp]
+     77       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [irq/25-pciehp]
+     78       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [irq/26-pciehp]
+     79       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [irq/27-pciehp]
+     80       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [irq/28-pciehp]
+     81       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [irq/29-pciehp]
+     82       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [irq/30-pciehp]
+     83       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [irq/31-pciehp]
+     84       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [irq/32-pciehp]
+     85       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [irq/33-pciehp]
+     86       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [irq/34-pciehp]
+     87       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [irq/35-pciehp]
+     88       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [irq/36-pciehp]
+     89       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [irq/37-pciehp]
+     90       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [irq/38-pciehp]
+     91       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [irq/39-pciehp]
+     92       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [irq/40-pciehp]
+     93       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [irq/41-pciehp]
+     94       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [irq/42-pciehp]
+     95       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [irq/43-pciehp]
+     96       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [irq/44-pciehp]
+     97       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [irq/45-pciehp]
+     98       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [irq/46-pciehp]
+     99       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [irq/47-pciehp]
+    100       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [irq/48-pciehp]
+    101       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [irq/49-pciehp]
+    102       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [irq/50-pciehp]
+    103       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [irq/51-pciehp]
+    104       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [irq/52-pciehp]
+    105       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [irq/53-pciehp]
+    106       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [irq/54-pciehp]
+    107       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [irq/55-pciehp]
+    108       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [kworker/R-acpi_thermal_pm]
+    110       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [kworker/R-scsi_tmf_0]
+    112       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [kworker/R-scsi_tmf_1]
+    116       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [kworker/R-mld]
+    117       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [kworker/R-ipv6_addrconf]
+    118       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [kworker/u512:1-ipv6_addrconf]
+    119       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [kworker/R-kstrp]
+    121       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [kworker/u515:0]
+    122       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [kworker/u516:0]
+    123       2 root      0.0  0.0 Tue Oct 27 14:34:44 2026 [kworker/u517:0]
+    136       2 root      0.0  0.0 Tue Oct 27 14:34:45 2026 [kworker/R-charger_manager]
+    373       2 root      0.0  0.0 Tue Oct 27 14:34:45 2026 [kworker/R-mpt_poll_0]
+    374       2 root      0.0  0.0 Tue Oct 27 14:34:45 2026 [kworker/R-mpt/0]
+    376       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [scsi_eh_2]
+    377       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [kworker/R-scsi_tmf_2]
+    378       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [scsi_eh_3]
+    379       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [kworker/R-scsi_tmf_3]
+    380       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [scsi_eh_4]
+    381       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [kworker/R-scsi_tmf_4]
+    382       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [scsi_eh_5]
+    383       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [kworker/R-scsi_tmf_5]
+    384       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [scsi_eh_6]
+    385       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [kworker/R-scsi_tmf_6]
+    386       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [scsi_eh_7]
+    387       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [kworker/R-scsi_tmf_7]
+    388       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [scsi_eh_8]
+    389       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [kworker/R-scsi_tmf_8]
+    390       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [scsi_eh_9]
+    391       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [kworker/R-scsi_tmf_9]
+    392       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [scsi_eh_10]
+    393       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [kworker/R-scsi_tmf_10]
+    394       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [scsi_eh_11]
+    396       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [kworker/R-scsi_tmf_11]
+    397       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [scsi_eh_12]
+    398       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [kworker/R-scsi_tmf_12]
+    399       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [scsi_eh_13]
+    400       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [kworker/R-scsi_tmf_13]
+    401       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [scsi_eh_14]
+    402       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [kworker/R-scsi_tmf_14]
+    403       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [scsi_eh_15]
+    404       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [kworker/R-scsi_tmf_15]
+    405       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [scsi_eh_16]
+    406       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [kworker/R-scsi_tmf_16]
+    407       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [scsi_eh_17]
+    408       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [kworker/R-scsi_tmf_17]
+    409       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [scsi_eh_18]
+    410       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [kworker/R-scsi_tmf_18]
+    411       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [scsi_eh_19]
+    412       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [kworker/R-scsi_tmf_19]
+    413       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [scsi_eh_20]
+    414       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [kworker/R-scsi_tmf_20]
+    415       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [scsi_eh_21]
+    416       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [kworker/R-scsi_tmf_21]
+    417       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [scsi_eh_22]
+    418       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [kworker/R-scsi_tmf_22]
+    419       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [scsi_eh_23]
+    420       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [kworker/R-scsi_tmf_23]
+    421       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [scsi_eh_24]
+    422       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [kworker/R-scsi_tmf_24]
+    423       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [scsi_eh_25]
+    424       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [kworker/R-scsi_tmf_25]
+    425       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [scsi_eh_26]
+    426       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [kworker/R-scsi_tmf_26]
+    427       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [scsi_eh_27]
+    428       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [kworker/R-scsi_tmf_27]
+    429       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [scsi_eh_28]
+    430       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [kworker/R-scsi_tmf_28]
+    431       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [scsi_eh_29]
+    432       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [kworker/R-scsi_tmf_29]
+    433       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [scsi_eh_30]
+    434       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [kworker/R-scsi_tmf_30]
+    435       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [scsi_eh_31]
+    436       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [kworker/R-scsi_tmf_31]
+    437       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [scsi_eh_32]
+    438       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [kworker/R-scsi_tmf_32]
+    570       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [kworker/R-kdmflush/252:0]
+    605       2 root      0.0  0.0 Tue Oct 27 14:34:46 2026 [kworker/R-ext4-rsv-conversion]
+    670       2 root      0.0  0.0 Tue Oct 27 14:34:47 2026 [irq/58-vmw_vmci]
+    728       2 root      0.0  0.0 Tue Oct 27 14:34:47 2026 [kworker/R-kmpathd]
+    730       2 root      0.0  0.0 Tue Oct 27 14:34:47 2026 [kworker/R-kmpath_handlerd]
+    848       2 root      0.0  0.0 Tue Oct 27 14:34:48 2026 [irq/16-vmwgfx]
+    849       2 root      0.0  0.0 Tue Oct 27 14:34:48 2026 [kworker/R-ttm]
+    860       2 root      0.0  0.0 Tue Oct 27 14:34:48 2026 [jbd2/sda2-8]
+    861       2 root      0.0  0.0 Tue Oct 27 14:34:48 2026 [kworker/R-ext4-rsv-conversion]
+   1480       2 root      0.0  0.0 Tue Oct 27 14:34:49 2026 [kworker/R-cfg80211]
+   1569    1540 _chrony   0.0  0.0 Tue Oct 27 14:34:50 2026 /usr/sbin/chronyd -n -F 1
+   1845    1843 luis      0.0  0.0 Tue Oct 27 14:34:58 2026 (sd-pam)
+   2092    2038 luis      0.0  0.0 Tue Oct 27 14:36:09 2026 sh /home/luis/.vscode-server/cli/servers/Stable-e646868227c3e3a9e3f24277c8c7220be42c0be7/server/bin/code-server --socket-path /tmp/code-97c7d240-11a0-49e5-9778-e7942c240d9a --agent-host-path /tmp/code-9667d075-4d80-440c-ad58-255a909bdd5d --start-server --accept-server-license-terms --enable-remote-auto-shutdown --without-connection-token
+   3404       2 root      0.0  0.0 Tue Oct 27 14:51:53 2026 [psimon]
+   3473       1 root      0.0  0.2 Tue Oct 27 14:51:53 2026 /usr/bin/VGAuthService
+   3565       2 root      0.0  0.0 Tue Oct 27 14:51:53 2026 [psimon]
+   5026       1 luis      0.0  0.0 Tue Oct 27 15:28:28 2026 sh /home/luis/.vscode-server/cli/servers/Stable-e646868227c3e3a9e3f24277c8c7220be42c0be7/server/bin/code-server --connection-token=remotessh --accept-server-license-terms --agent-host-bridge-port=34625 --agent-host-bridge-host=127.0.0.1 --start-server --enable-remote-auto-shutdown --socket-path=/tmp/code-3a18b938-ed43-4d10-b11b-12b7e6309844
+   7512    3476 root      0.0  0.2 Tue Oct 27 15:39:46 2026 sshd-session: luis [priv]
+   7617    7616 luis      0.0  0.0 Tue Oct 27 15:39:48 2026 sh
+   7735    7635 luis      0.0  0.0 Tue Oct 27 15:39:51 2026 /bin/sh
+  13071    3476 root      0.0  0.2 Tue Oct 27 16:19:32 2026 sshd-session: luis [priv]
+  13098   13071 luis      0.0  0.1 Tue Oct 27 16:19:34 2026 sshd-session: luis@pts/0
+  13438       2 root      0.0  0.0 Tue Oct 27 16:30:07 2026 [kworker/2:3-cgroup_free]
+  16648       2 root      0.0  0.0 Tue Oct 27 17:10:10 2026 [kworker/1:3-cgroup_free]
+  25823       2 root      0.0  0.0 Tue Oct 27 17:30:08 2026 [kworker/0:0-cgroup_free]
+  30208    7617 luis      0.0  0.1 Tue Oct 27 17:36:49 2026 sleep 180
+  31193    7712 root      0.0  0.1 Tue Oct 27 17:37:05 2026 sudo ansible-playbook -K site.yml
+  31195   31193 root      0.0  0.0 Tue Oct 27 17:37:05 2026 sudo ansible-playbook -K site.yml
+  32021   32004 root      0.0  0.0 Tue Oct 27 17:37:18 2026 /bin/sh -c /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1793122638.9108174-32004-234810317666367/AnsiballZ_command.py && sleep 0'
+  32022   32021 root      0.0  0.0 Tue Oct 27 17:37:18 2026 /bin/sh -c /usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1793122638.9108174-32004-234810317666367/AnsiballZ_command.py && sleep 0
+  32296   32024 root      0.0  0.0 Tue Oct 27 17:37:18 2026 /bin/ps -eo pid,ppid,user,%cpu,%mem,lstart,args --sort=-%cpu

@@ -1,0 +1,27 @@
+---
+# Configuración local de devsecopssrv01. Copia/adapta este fichero por hostname.
+lsm_modules:
+  antivirus: false
+  integrity: true
+  processes: true
+  network: true
+  motd: true
+
+lsm_antivirus:
+  paths: [/var/tmp]
+  excludes: []
+  update_signatures: true
+  action: report
+
+lsm_integrity:
+  paths: [/etc/ssh, /etc/hosts, /usr/local/bin]
+  excludes: []
+  baseline_file: /var/lib/linux-security-monitor/baselines/devsecopssrv01.json
+
+lsm_processes:
+  cpu_threshold: 80
+  memory_threshold: 50
+
+lsm_network:
+  include_processes: true
+

@@ -1,0 +1,24 @@
+---
+- name: Require Debian style dynamic MOTD support
+  ansible.builtin.assert:
+    that: ansible_os_family == 'Debian'
+    fail_msg: "El módulo MOTD utiliza update-motd de Debian/Ubuntu; no se modificó sshd ni /etc/motd."
+- name: Ensure update-motd hook directory exists
+  ansible.builtin.file:
+    path: /etc/update-motd.d
+    state: directory
+    owner: root
+    group: root
+    mode: '0755'
+  become: true
+- name: Install dynamic Linux Security Monitor MOTD hook
+  ansible.builtin.copy:
+    src: linux-security-monitor-motd.sh
+    dest: /etc/update-motd.d/99-linux-security-monitor
+    owner: root
+    group: root
+    mode: '0755'
+  become: true
+- name: Keep static MOTD and SSH last-login message intact
+  ansible.builtin.debug:
+    msg: "MOTD dinámico instalado; /etc/motd y los ajustes SSH/PAM existentes se conservan."

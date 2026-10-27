@@ -1,0 +1,7 @@
+---
+lsm_antivirus:
+  paths: []
+  excludes: []
+  update_signatures: true
+  action: report
+  extra_args: []
